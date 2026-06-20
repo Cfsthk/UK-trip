@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage &amp; Magic Journeys | UK &amp; Paris Itinerary 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #1e3a8a;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .brand-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+        }
+
+        .nav-tab {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-tab.active {
+            background-color: #1e3a8a;
+            color: white;
+            box-shadow: 0 10px 15px -3px rgb(30 58 138 / 0.2);
+        }
+
+        .itinerary-card {
+            transition: transform 0.2s cubic-bezier(0.4, 0.0, 0.2, 1), 
+                        box-shadow 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .itinerary-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 48px;
+            height: 3px;
+            background: linear-gradient(to right, #1e3a8a, #3b82f6);
+            border-radius: 3px;
+        }
+
+        .meta-pill {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .price-badge {
+            background-color: #fefce8;
+            color: #854d0e;
+            border: 1px solid #fde047;
+        }
+
+        .booking-badge {
+            font-size: 0.75rem;
+            padding: 0.125rem 0.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+        }
+
+        .money-tip {
+            background-color: #fefce8;
+            border-left: 4px solid #ca8a04;
+        }
+
+        .day-accent {
+            border-left: 5px solid #1e3a8a;
+        }
+
+        .restaurant-option {
+            transition: all 0.2s ease;
+        }
+        
+        .restaurant-option:hover {
+            background-color: #faf5ff;
+        }
+
+        .tab-scroll {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f1f5f9;
+        }
+
+        .premium-shadow {
+            box-shadow: 0 10px 15px -3px rgb(15 23 42 / 0.08), 
+                       0 4px 6px -4px rgb(15 23 42 / 0.08);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+    <!-- Premium Header -->
+    <header class="brand-gradient text-white shadow-xl">
+        <div class="max-w-screen-xl mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-11 h-11 bg-white/20 backdrop-blur-md rounded-2xl flex items-center justify-center">
+                            <i class="fa-solid fa-globe text-3xl text-white"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-3xl md:text-4xl heading-serif tracking-tight">Heritage &amp; Magic Journeys</h1>
+                            <p class="text-blue-100 text-sm tracking-[1px] font-medium">CURATED FOR CHARLES • 方貴瀚</p>
+                        </div>
+                    </div>
+                    <p class="text-xl font-light text-white/90">UK &amp; Paris • July 2026</p>
+                </div>
+                
+                <div class="flex flex-col items-start md:items-end gap-1 text-sm">
+                    <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur px-4 py-1.5 rounded-3xl text-sm">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span class="font-medium">26 Jun – 11 Jul 2026</span>
+                    </div>
+                    <div class="text-blue-100 text-xs flex items-center gap-1.5">
+                        <span>8 Featured Days</span>
+                        <span class="w-1 h-1 bg-white/40 rounded-full"></span>
+                        <span>2 Countries</span>
+                        <span class="w-1 h-1 bg-white/40 rounded-full"></span>
+                        <span>Heritage • Palaces • Magic</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-screen-xl mx-auto px-5 pb-16">
+        
+        <!-- Trip Overview -->
+        <div class="mt-8 mb-6">
+            <div class="bg-white rounded-3xl premium-shadow border border-slate-100 p-6 md:p-8">
+                <div class="grid md:grid-cols-12 gap-6 items-center">
+                    <div class="md:col-span-7">
+                        <div class="flex items-center gap-2 mb-3">
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 text-xs font-semibold tracking-wider rounded-2xl">VALUE-FOCUSED</span>
+                            <span class="px-3 py-1 bg-amber-100 text-amber-700 text-xs font-semibold tracking-wider rounded-2xl">PEAK SEASON TIPS</span>
+                        </div>
+                        <h2 class="text-2xl heading-serif text-slate-900 mb-2">Your Personal Heritage Adventure</h2>
+                        <p class="text-slate-600 max-w-prose">A carefully balanced mix of world-class paid attractions, free iconic museums, breathtaking landscapes, and magical film history. Designed for depth over rushing, with built-in flexibility and strong money-saving strategies throughout.</p>
+                    </div>
+                    
+                    <div class="md:col-span-5">
+                        <div class="grid grid-cols-3 gap-3 text-center">
+                            <div class="bg-slate-50 rounded-2xl p-4">
+                                <div class="text-emerald-600 text-xl font-semibold">€85</div>
+                                <div class="text-xs text-slate-500 mt-0.5">Paris Museum Pass<br>(2-day recommended)</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-2xl p-4">
+                                <div class="text-amber-600 text-xl font-semibold">£58.50+</div>
+                                <div class="text-xs text-slate-500 mt-0.5">Harry Potter Studio<br>(advance essential)</div>
+                            </div>
+                            <div class="bg-slate-50 rounded-2xl p-4">
+                                <div class="text-blue-600 text-xl font-semibold">Many Free</div>
+                                <div class="text-xs text-slate-500 mt-0.5">British Museum • National Gallery • Parks</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Money-Saving Overview Banner -->
+        <div class="mb-8 bg-gradient-to-r from-amber-50 to-yellow-50 border border-amber-200 rounded-3xl p-6">
+            <div class="flex items-start gap-4">
+                <div class="shrink-0 w-10 h-10 bg-amber-400 text-white rounded-2xl flex items-center justify-center">
+                    <i class="fa-solid fa-piggy-bank text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <h3 class="font-semibold text-amber-900 mb-1 flex items-center gap-2">Smart Savings Strategy for Peak July</h3>
+                    <div class="text-sm text-amber-800 grid md:grid-cols-2 gap-x-8 gap-y-1">
+                        <div>• <strong>Paris Museum Pass (2-day €85)</strong> — Covers Sainte-Chapelle, Versailles, Louvre, d’Orsay + 50+ sites. Skip-the-line at many + huge time saver in peak season.</div>
+                        <div>• <strong>Book everything 3–6 weeks ahead</strong> — Especially Harry Potter Studio, Westminster Abbey, Versailles timed slots. Prices often lower + guaranteed entry.</div>
+                        <div>• <strong>Transport hacks:</strong> Contactless/Oyster in London &amp; Paris. Eurostar Standard Premier for comfort on long day. Trainline app for best UK fares.</div>
+                        <div>• <strong>Food strategy:</strong> Picnic at parks/studios. Lunch at brasseries vs tourist restaurants. Many excellent pubs offer great value Sunday roasts.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Day Tabs -->
+        <div class="mb-6">
+            <div class="flex items-center justify-between mb-3 px-1">
+                <h3 class="font-semibold text-slate-700 flex items-center gap-2">
+                    <i class="fa-solid fa-route"></i> 
+                    <span>Explore by Day</span>
+                </h3>
+                <div class="text-xs text-slate-500 hidden md:block">Click any day to jump • Scroll tabs on mobile</div>
+            </div>
+            
+            <div class="tabs flex overflow-x-auto gap-2 pb-3 tab-scroll">
+                <button onclick="switchDay('day4')" class="nav-tab active flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day4">
+                    <i class="fa-solid fa-plane-arrival"></i> <span>Jul 4 • Arrival</span>
+                </button>
+                <button onclick="switchDay('day5')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day5">
+                    <i class="fa-solid fa-chess-rook"></i> <span>Jul 5 • Cotswolds</span>
+                </button>
+                <button onclick="switchDay('day6')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day6">
+                    <i class="fa-solid fa-train"></i> <span>Jul 6 • Paris</span>
+                </button>
+                <button onclick="switchDay('day7')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day7">
+                    <i class="fa-solid fa-landmark"></i> <span>Jul 7 • Versailles</span>
+                </button>
+                <button onclick="switchDay('day8')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day8">
+                    <i class="fa-solid fa-palette"></i> <span>Jul 8 • Louvre + Return</span>
+                </button>
+                <button onclick="switchDay('day9')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day9">
+                    <i class="fa-solid fa-church"></i> <span>Jul 9 • London Heritage</span>
+                </button>
+                <button onclick="switchDay('day10')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day10">
+                    <i class="fa-solid fa-magic"></i> <span>Jul 10 • Harry Potter</span>
+                </button>
+                <button onclick="switchDay('day11')" class="nav-tab flex items-center gap-2 px-5 py-2.5 text-sm font-medium whitespace-nowrap bg-white border border-slate-200 hover:border-slate-300 rounded-3xl shadow-sm" id="tab-day11">
+                    <i class="fa-solid fa-plane-departure"></i> <span>Jul 11 • Departure</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ================= DAY 4 ================= -->
+        <div id="day4" class="day-panel">
+            <div class="day-header bg-white border-l-4 border-blue-800 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">🛬</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif text-slate-900">Saturday, 4 July • Arrival in Rugby</h2>
+                                <p class="text-slate-600">Settle into your Warwickshire base • Easy Cotswolds access ahead</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-1 rounded-2xl text-xs font-medium">
+                            <i class="fa-solid fa-car"></i> RENTAL CAR PICKUP
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-6">
+                <!-- Main Activity -->
+                <div class="lg:col-span-3 itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex items-start justify-between mb-4">
+                        <div>
+                            <span class="booking-badge bg-emerald-100 text-emerald-700">NO TICKET NEEDED</span>
+                            <h3 class="text-xl font-semibold mt-2">Base Check-in &amp; Evening Settle</h3>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-xs text-slate-500">From ~18:00</div>
+                        </div>
+                    </div>
+                    
+                    <div class="prose prose-sm text-slate-600">
+                        <p>Arrive Rugby, collect rental car at station or airport transfer point. Short drive to accommodation. Use the evening to rest, unpack, and plan the Cotswolds loop tomorrow. Rugby offers charming independent shops and classic British high street for any last-minute supplies.</p>
+                    </div>
+
+                    <div class="mt-5 pt-5 border-t grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                        <div>
+                            <div class="font-medium text-slate-700 mb-1">Recommended Base</div>
+                            <div class="text-slate-600">Rugby or nearby Leamington Spa / Warwick area for central Cotswolds access (30–50 min drives).</div>
+                        </div>
+                        <div>
+                            <div class="font-medium text-slate-700 mb-1">Evening Option</div>
+                            <div class="text-slate-600">Gentle stroll around Rugby town centre or relax at accommodation with local ales.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dining -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="bg-white border border-slate-200 rounded-3xl p-5 premium-shadow">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-solid fa-utensils text-purple-600"></i>
+                            <span class="font-semibold">Dinner Options</span>
+                        </div>
+                        
+                        <div class="space-y-4 text-sm">
+                            <!-- Restaurant 1 -->
+                            <div class="restaurant-option border border-slate-100 rounded-2xl p-3.5">
+                                <div class="font-semibold flex items-center justify-between">
+                                    <span>The Merchants Inn</span>
+                                    <span class="text-xs px-2 py-0.5 bg-purple-100 text-purple-700 rounded">££</span>
+                                </div>
+                                <div class="text-xs text-slate-500 mt-0.5">Little Church St, Rugby • Classic timber pub</div>
+                                <div class="mt-1.5 text-xs">Excellent meat pies, hand-cut chips, seasonal ales. Traditional British atmosphere.</div>
+                                <div class="flex gap-2 mt-2">
+                                    <a href="https://www.google.com/maps/search/?api=1&query=The+Merchants+Inn+Rugby" target="_blank" class="text-xs px-3 py-1 bg-emerald-50 text-emerald-700 rounded-xl inline-flex items-center gap-1 hover:bg-emerald-100"><i class="fa-solid fa-map-marker-alt fa-sm"></i> Map</a>
+                                    <a href="https://www.google.com/search?q=The+Merchants+Inn+Rugby+reviews" target="_blank" class="text-xs px-3 py-1 bg-slate-100 text-slate-600 rounded-xl inline-flex items-center gap-1 hover:bg-slate-200"><i class="fa-solid fa-search fa-sm"></i> Reviews</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Restaurant 2 -->
+                            <div class="restaurant-option border border-slate-100 rounded-2xl p-3.5">
+                                <div class="font-semibold flex items-center justify-between">
+                                    <span>The Old Olive Bush</span>
+                                    <span class="text-xs px-2 py-0.5 bg-purple-100 text-purple-700 rounded">££–£££</span>
+                                </div>
+                                <div class="text-xs text-slate-500 mt-0.5">Alternative in nearby Dunchurch • Highly rated</div>
+                                <div class="mt-1.5 text-xs">Modern British with excellent Sunday-style roasts and attentive service. Good for a relaxed first evening.</div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-3 text-[10px] text-amber-600 flex items-center gap-1">
+                            <i class="fa-solid fa-info-circle"></i> <span>Book popular spots via their website or phone — July weekends can fill up.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Money Tips -->
+            <div class="money-tip mt-6 rounded-3xl p-5 text-sm">
+                <div class="font-semibold text-amber-900 mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb"></i> Money-Saving Tips for Arrival Day</div>
+                <ul class="text-amber-800 space-y-1 text-xs md:text-sm pl-1">
+                    <li>• Collect rental car directly at station if possible to avoid extra airport fees.</li>
+                    <li>• Stock basic breakfast supplies at a local supermarket (Tesco/Sainsbury’s) instead of hotel breakfast.</li>
+                    <li>• Many pubs offer excellent value “meal deals” or early evening discounts.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ================= DAY 5 ================= -->
+        <div id="day5" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-emerald-700 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">🏰</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif text-slate-900">Sunday, 5 July • Castles &amp; Cotswolds</h2>
+                                <p class="text-slate-600">Medieval history + rolling honey-stone villages • Full driving day</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="booking-badge bg-amber-100 text-amber-700">BOOK WARWICK CASTLE AHEAD</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Warwick Castle -->
+            <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow mb-6">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="booking-badge bg-amber-100 text-amber-700">TIMED ENTRY RECOMMENDED</span>
+                                <h3 class="text-2xl font-semibold mt-1.5">Warwick Castle</h3>
+                                <p class="text-emerald-700 text-sm font-medium">09:40 – 13:00 (flexible 3–4 hrs)</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="price-badge inline-block px-3 py-1 rounded-2xl text-sm font-semibold">~£32–35 adult</div>
+                                <div class="text-xs text-slate-500 mt-0.5">+ parking ~£10</div>
+                            </div>
+                        </div>
+                        
+                        <p class="mt-4 text-slate-600">11th-century castle of William the Conqueror. Climb towers, explore Great Hall &amp; armoury, enjoy spectacular grounds and seasonal events. One of the best-preserved medieval castles in England.</p>
+                        
+                        <div class="mt-4 flex flex-wrap gap-2 text-xs">
+                            <div class="meta-pill px-3 py-1 rounded-2xl">Parking: Stratford Rd, CV34 6QX</div>
+                            <div class="meta-pill px-3 py-1 rounded-2xl">Open ~10:00–17:00</div>
+                            <div class="meta-pill px-3 py-1 rounded-2xl">Book online for best slot &amp; price</div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-72 shrink-0">
+                        <a href="https://www.warwick-castle.com/" target="_blank" class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 transition text-white font-semibold py-3 rounded-2xl text-sm">Book Official Tickets →</a>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Warwick+Castle+Stratford+Rd+Car+Park" target="_blank" class="mt-2 block text-center text-xs border border-slate-300 hover:bg-slate-50 py-2.5 rounded-2xl">View on Maps</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cotswolds Villages -->
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex items-start justify-between mb-3">
+                        <div>
+                            <span class="text-xs font-medium px-2.5 py-0.5 bg-teal-100 text-teal-700 rounded">FREE / LOW COST</span>
+                            <h3 class="font-semibold text-xl mt-2">Chipping Campden</h3>
+                            <p class="text-sm text-slate-500">13:45 – 15:30 • 45 min drive from Warwick</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600">Quintessential Cotswolds wool town with honey-coloured limestone buildings, covered market, and elegant high street perfect for boutique browsing and photos.</p>
+                    
+                    <div class="mt-4">
+                        <div class="text-xs font-medium mb-1.5">Tea / Light Lunch Options</div>
+                        <div class="space-y-2 text-sm">
+                            <div class="flex justify-between items-start"><span class="font-medium">Bantam Tea Rooms</span> <span class="text-xs text-teal-600">££</span></div>
+                            <div class="text-xs text-slate-500">17th-c stone house • Famous fruit scones &amp; proper tea</div>
+                            
+                            <div class="flex justify-between items-start"><span class="font-medium">The Eight Bells</span> <span class="text-xs text-teal-600">££</span></div>
+                            <div class="text-xs text-slate-500">Historic pub with excellent Sunday lunch &amp; local ales</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex items-start justify-between mb-3">
+                        <div>
+                            <span class="text-xs font-medium px-2.5 py-0.5 bg-teal-100 text-teal-700 rounded">FREE / LOW COST</span>
+                            <h3 class="font-semibold text-xl mt-2">Bourton-on-the-Water</h3>
+                            <p class="text-sm text-slate-500">16:00 – 17:30 • “Venice of the Cotswolds”</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-slate-600">Shallow River Windrush flows under picturesque low stone bridges. Perfect for relaxed riverside walks, ice cream, and classic Cotswolds photos. Model Village attraction optional (£).</p>
+                    
+                    <div class="mt-4 text-xs">
+                        <div class="font-medium mb-1">Alternative / Flexible Option</div>
+                        <div class="text-slate-600">If energy low, skip one village and extend time at Warwick Castle grounds or add a gentle stop in Stow-on-the-Wold (beautiful market square, antique shops).</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money-tip rounded-3xl p-5 text-sm">
+                <div class="font-semibold text-amber-900 mb-2 flex items-center gap-2"><i class="fa-solid fa-lightbulb"></i> Cotswolds Money-Saving Tips</div>
+                <ul class="text-amber-800 text-xs md:text-sm space-y-1 pl-1">
+                    <li>• Warwick Castle: Book online 2+ weeks ahead — often cheaper than gate + guarantees entry in busy July.</li>
+                    <li>• Many Cotswolds villages have free or low-cost parking on outskirts; use “Park &amp; Walk” to avoid centre charges.</li>
+                    <li>• Picnic supplies from Rugby supermarket before leaving — beautiful spots by the river in Bourton.</li>
+                    <li>• Sunday roasts at pubs are often excellent value set menus.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ================= DAY 6 ================= -->
+        <div id="day6" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-violet-700 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="text-3xl">🚄</span>
+                        <div>
+                            <h2 class="text-2xl heading-serif">Monday, 6 July • Rugby → Paris via London</h2>
+                            <p class="text-slate-600">Eurostar adventure + breathtaking Sainte-Chapelle stained glass</p>
+                        </div>
+                    </div>
+                    <span class="booking-badge bg-violet-100 text-violet-700">EUROSTAR + TIMED ENTRY</span>
+                </div>
+            </div>
+
+            <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow mb-6">
+                <h3 class="font-semibold text-lg mb-3 flex items-center gap-2"><i class="fa-solid fa-train text-violet-600"></i> Transit: Rugby → Paris Gare du Nord</h3>
+                
+                <div class="grid md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-slate-50 rounded-2xl p-4">
+                        <div class="font-medium">07:30 – 09:30</div>
+                        <div class="text-xs text-slate-500">Drive Rugby → London Heathrow or direct to St Pancras area</div>
+                    </div>
+                    <div class="bg-slate-50 rounded-2xl p-4">
+                        <div class="font-medium">10:15 – 11:00</div>
+                        <div class="text-xs text-slate-500">Elizabeth line or taxi to St Pancras International</div>
+                    </div>
+                    <div class="bg-slate-50 rounded-2xl p-4">
+                        <div class="font-medium">12:30 – 15:47</div>
+                        <div class="text-xs text-slate-500">Eurostar to Paris Gare du Nord (book Standard or Standard Premier)</div>
+                    </div>
+                </div>
+                
+                <div class="mt-4 flex flex-wrap gap-3">
+                    <a href="https://www.eurostar.com/" target="_blank" class="btn-ticket inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold rounded-2xl">Book Eurostar Tickets</a>
+                    <a href="https://www.thetrainline.com/" target="_blank" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm font-semibold border border-slate-300 hover:bg-slate-50 rounded-2xl">UK Trainline App</a>
+                </div>
+            </div>
+
+            <!-- Sainte-Chapelle -->
+            <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between">
+                            <div>
+                                <span class="booking-badge bg-violet-100 text-violet-700">PARIS MUSEUM PASS + TIMED SLOT</span>
+                                <h3 class="text-2xl font-semibold mt-1.5">Sainte-Chapelle</h3>
+                                <p class="text-sm text-violet-700 font-medium">16:30 – 18:30 (or earlier slot)</p>
+                            </div>
+                            <div>
+                                <div class="price-badge px-3 py-1 rounded-2xl text-sm">€22 (covered by Pass)</div>
+                            </div>
+                        </div>
+                        <p class="mt-3 text-slate-600">13th-century royal chapel with arguably the most spectacular medieval stained-glass windows in the world — 1,113 scenes telling biblical stories in jewel tones. A must-see highlight of Paris.</p>
+                        
+                        <div class="mt-3 text-xs bg-violet-50 text-violet-700 px-3 py-2 rounded-2xl inline-block">Mandatory online timed reservation even with Museum Pass</div>
+                    </div>
+                    <div class="lg:w-64">
+                        <a href="https://www.sainte-chapelle.fr/" target="_blank" class="block text-center bg-violet-600 text-white py-3 rounded-2xl text-sm font-semibold">Reserve Timed Slot →</a>
+                        <div class="text-center mt-3 text-xs text-slate-500">Book early — slots fill fast in July</div>
+                    </div>
+                </div>
+
+                <!-- Dining in Paris -->
+                <div class="mt-6 pt-6 border-t">
+                    <div class="font-semibold mb-3 flex items-center gap-2"><i class="fa-solid fa-utensils text-purple-600"></i> Dinner Options near Sainte-Chapelle / Saint-Germain</div>
+                    <div class="grid md:grid-cols-3 gap-4 text-sm">
+                        <div class="restaurant-option p-3.5 border rounded-2xl">
+                            <div class="font-medium">Les Antiquaires <span class="text-xs text-purple-600">£££</span></div>
+                            <div class="text-xs text-slate-500">Rue du Bac • Classic bistro, duck confit, escargots, steak frites</div>
+                        </div>
+                        <div class="restaurant-option p-3.5 border rounded-2xl">
+                            <div class="font-medium">Le Comptoir du Relais <span class="text-xs text-purple-600">£££</span></div>
+                            <div class="text-xs text-slate-500">Iconic Saint-Germain spot • Book well ahead or queue early</div>
+                        </div>
+                        <div class="restaurant-option p-3.5 border rounded-2xl">
+                            <div class="font-medium">Bouillon Chartier <span class="text-xs text-emerald-600">£</span></div>
+                            <div class="text-xs text-slate-500">Budget classic Parisian bouillon • Great value, lively atmosphere</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money-tip mt-6 rounded-3xl p-5">
+                <div class="font-semibold text-amber-900 mb-2">Day 6 Money Tips</div>
+                <ul class="text-amber-800 text-sm space-y-1">
+                    <li>• Buy Paris Museum Pass on arrival at CDG or Gare du Nord (or online) — covers Sainte-Chapelle + next 2 days.</li>
+                    <li>• Eurostar: Book Standard Premier for ~£30–50 extra per person for more space, meal &amp; priority boarding — worth it on a long travel day.</li>
+                    <li>• Walk or use Metro/Velib between sites in central Paris to save on taxis.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ================= DAY 7 ================= -->
+        <div id="day7" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-rose-700 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">👑</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif">Tuesday, 7 July • Royal Versailles &amp; Impressionists</h2>
+                                <p class="text-slate-600">Palace grandeur + Musée d’Orsay masterpieces</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="booking-badge bg-rose-100 text-rose-700">MUSEUM PASS + TIMED</span>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Versailles -->
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex flex-col lg:flex-row gap-6">
+                        <div class="flex-1">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="booking-badge bg-rose-100 text-rose-700">BOOK TIMED SLOT</span>
+                                    <h3 class="text-2xl font-semibold mt-1">Palace of Versailles</h3>
+                                    <p class="text-sm text-rose-700">09:15 – 14:00 (gardens until later)</p>
+                                </div>
+                                <div class="price-badge px-3 py-1 text-sm">€32 (Pass)</div>
+                            </div>
+                            <p class="mt-3 text-slate-600">Hall of Mirrors, royal apartments, and the vast formal gardens designed by Le Nôtre. Allow time to wander the grounds — they are free with palace ticket on most days.</p>
+                            
+                            <div class="mt-3 text-xs flex flex-wrap gap-2">
+                                <div class="meta-pill px-3 py-1 rounded-2xl">RER C from central Paris (~45 min)</div>
+                                <div class="meta-pill px-3 py-1 rounded-2xl">Closed Mondays — Tuesday perfect</div>
+                            </div>
+                        </div>
+                        <div class="lg:w-64">
+                            <a href="https://www.chateauversailles.fr/" target="_blank" class="block bg-rose-600 hover:bg-rose-700 text-white text-center py-3 rounded-2xl font-semibold text-sm">Reserve Versailles Slot →</a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5 pt-5 border-t">
+                        <div class="font-medium mb-2 text-sm">Lunch at Versailles</div>
+                        <div class="grid md:grid-cols-2 gap-3 text-sm">
+                            <div class="restaurant-option p-3 border rounded-2xl">
+                                <span class="font-semibold">La Flottille</span> <span class="text-xs text-rose-600">(in Gardens)</span><br>
+                                <span class="text-xs">Terrace by Grand Canal • Classic brasserie with beautiful views</span>
+                            </div>
+                            <div class="restaurant-option p-3 border rounded-2xl">
+                                <span class="font-semibold">Le Grand Café d’Orsay</span> <span class="text-xs">(nearby)</span><br>
+                                <span class="text-xs">Good alternative if gardens busy</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- d'Orsay -->
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex justify-between items-start mb-3">
+                        <div>
+                            <span class="booking-badge bg-emerald-100 text-emerald-700">MUSEUM PASS • OFTEN NO TIMED NEEDED</span>
+                            <h3 class="text-2xl font-semibold">Musée d’Orsay</h3>
+                            <p class="text-sm text-emerald-700">15:00 – 17:30</p>
+                        </div>
+                        <div class="price-badge px-3 py-1">€16 (Pass)</div>
+                    </div>
+                    <p class="text-slate-600">Housed in a stunning former railway station. World-class Impressionist &amp; Post-Impressionist collection (Monet, Van Gogh, Renoir, Degas). Much more manageable than the Louvre.</p>
+                    
+                    <div class="mt-4">
+                        <div class="font-medium text-sm mb-2">Dinner near d’Orsay / Eiffel area</div>
+                        <div class="text-sm grid md:grid-cols-2 gap-3">
+                            <div>Le Comptoir de La Traboule — refined small plates, excellent for sharing</div>
+                            <div>Alternative: Many brasseries along Rue Cler market street (great value, lively)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money-tip mt-6 p-5 rounded-3xl">
+                <div class="font-semibold text-amber-900 mb-1.5">Versailles &amp; d’Orsay Savings</div>
+                <div class="text-amber-800 text-sm">• Museum Pass covers both + skips many ticket lines.<br>• Gardens at Versailles are included with palace ticket (check current policy).<br>• Eat early or late to avoid peak restaurant prices; many good-value set menus (“formule”).</div>
+            </div>
+        </div>
+
+        <!-- ================= DAY 8 ================= -->
+        <div id="day8" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-indigo-700 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">🖼️</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif">Wednesday, 8 July • The Louvre &amp; Return to London</h2>
+                                <p class="text-slate-600">World’s greatest art museum + evening Eurostar back</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="booking-badge bg-indigo-100 text-indigo-700">STRICT TIMED ENTRY</span>
+                </div>
+            </div>
+
+            <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow mb-6">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-2xl font-semibold">The Louvre Museum</h3>
+                        <p class="text-sm text-indigo-700 font-medium mt-0.5">09:00 – 13:00 (focus Denon &amp; Sully wings)</p>
+                        <p class="mt-3 text-slate-600">Prioritise Mona Lisa (Denon), Winged Victory, Venus de Milo, and select antiquities. The museum is enormous — a focused 3–4 hour visit is ideal. Use the Museum Pass for entry.</p>
+                        <div class="mt-3 text-xs">Pre-booked timed slot is <strong>mandatory</strong> even with the Pass. Book via official Louvre site.</div>
+                    </div>
+                    <div class="lg:w-64 shrink-0">
+                        <a href="https://www.louvre.fr/en" target="_blank" class="block text-center bg-indigo-600 text-white py-3 rounded-2xl font-semibold">Reserve Louvre Timed Entry →</a>
+                        <div class="text-center text-xs mt-2 text-slate-500">€32 covered by Pass</div>
+                    </div>
+                </div>
+                
+                <div class="mt-6 pt-6 border-t grid md:grid-cols-2 gap-4">
+                    <div>
+                        <div class="font-medium mb-2">Lunch Options</div>
+                        <div class="text-sm space-y-2">
+                            <div><span class="font-semibold">Café Marly</span> — Iconic courtyard location with pyramid views. Elegant but pricey.</div>
+                            <div><span class="font-semibold">Nearby brasseries in Palais Royal area</span> — Better value, classic French.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="font-medium mb-2">Afternoon / Shopping</div>
+                        <div class="text-sm">Galerie Vivienne — beautiful 19th-century covered passage with bookshops, prints &amp; boutiques. Perfect relaxed finale before Eurostar.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money-tip p-5 rounded-3xl">
+                <div class="font-semibold text-amber-900">Louvre Day Savings</div>
+                <div class="text-sm text-amber-800 mt-1">Focus on 2–3 wings max. Use the free Louvre app or map for efficient routing. Many excellent lunch deals in the 1st arrondissement if you walk 5–10 mins away from the museum.</div>
+            </div>
+        </div>
+
+        <!-- ================= DAY 9 ================= -->
+        <div id="day9" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-amber-700 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">⛪</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif">Thursday, 9 July • Royal Heritage &amp; World Treasures</h2>
+                                <p class="text-slate-600">Westminster Abbey + British Museum (free but popular)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="booking-badge bg-amber-100 text-amber-700">BOOK ABBEY TIMED</span>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Westminster Abbey -->
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="booking-badge bg-amber-100 text-amber-700">TIMED ONLINE BOOKING</span>
+                            <h3 class="text-2xl font-semibold mt-1">Westminster Abbey</h3>
+                            <p class="text-sm text-amber-700">09:30 – 12:30</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="price-badge px-3 py-1 text-sm">~£31 adult</div>
+                            <div class="text-xs text-slate-500">(Summer discount sometimes applies)</div>
+                        </div>
+                    </div>
+                    <p class="mt-3 text-slate-600">Coronation church, royal tombs, Poets’ Corner, and the famous Cosmati pavement. One of the most historically significant buildings in Britain. Book timed entry to avoid disappointment.</p>
+                    
+                    <div class="mt-4">
+                        <a href="https://www.westminster-abbey.org/" target="_blank" class="inline-block bg-amber-600 text-white px-5 py-2.5 text-sm font-semibold rounded-2xl">Book Westminster Abbey Tickets →</a>
+                    </div>
+                    
+                    <div class="mt-4 text-sm">
+                        <span class="font-medium">Lunch:</span> The Cellarium Café &amp; Terrace (inside the Abbey complex) — historic setting, good quality.
+                    </div>
+                </div>
+
+                <!-- British Museum -->
+                <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow">
+                    <div class="flex justify-between">
+                        <div>
+                            <span class="booking-badge bg-emerald-100 text-emerald-700">FREE ENTRY</span>
+                            <h3 class="text-2xl font-semibold mt-1">The British Museum</h3>
+                            <p class="text-sm text-emerald-700">14:30 – 17:30</p>
+                        </div>
+                        <div class="price-badge px-3 py-1 text-sm">Free</div>
+                    </div>
+                    <p class="mt-3 text-slate-600">Rosetta Stone, Parthenon Sculptures, Egyptian mummies, and treasures from every continent. Enormous — pick 2–3 highlights or join a free guided tour if available.</p>
+                    
+                    <div class="mt-3 text-xs bg-emerald-50 px-3 py-2 rounded-2xl inline-block">Book free timed entry slot online to skip main queue in peak season</div>
+                    
+                    <div class="mt-5">
+                        <div class="font-medium mb-2">Dinner Recommendations (Covent Garden / Seven Dials)</div>
+                        <div class="grid md:grid-cols-2 gap-3 text-sm">
+                            <div class="restaurant-option p-3 border rounded-2xl"><span class="font-semibold">Hawksmoor Seven Dials</span><br><span class="text-xs">World-class steaks in beautiful historic setting. Book ahead.</span></div>
+                            <div class="restaurant-option p-3 border rounded-2xl"><span class="font-semibold">Rules Restaurant</span><br><span class="text-xs">London’s oldest restaurant (1798). Traditional British pies &amp; game in opulent surroundings.</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ================= DAY 10 - HARRY POTTER (CHANGED) ================= -->
+        <div id="day10" class="day-panel hidden">
+            <div class="day-header bg-gradient-to-r from-amber-900 to-yellow-800 text-white rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-4">
+                        <span class="text-4xl">⚡️</span>
+                        <div>
+                            <h2 class="text-2xl heading-serif">Friday, 10 July • Warner Bros. Studio Tour London</h2>
+                            <p class="text-amber-200">The Making of Harry Potter • Special 2026 Summer Feature Active!</p>
+                        </div>
+                    </div>
+                    <div class="text-right text-sm">
+                        <div class="bg-white/20 px-4 py-1 rounded-2xl text-xs inline-block">FULL DAY IMMERSIVE</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="itinerary-card bg-white border border-amber-200 rounded-3xl p-6 premium-shadow mb-6">
+                <div class="flex flex-col lg:flex-row gap-6">
+                    <div class="flex-1">
+                        <div class="flex items-start justify-between mb-2">
+                            <div>
+                                <span class="booking-badge bg-amber-200 text-amber-900">MANDATORY ADVANCE BOOKING</span>
+                                <h3 class="text-2xl font-semibold mt-1.5">Warner Bros. Studio Tour London – The Making of Harry Potter</h3>
+                                <p class="text-amber-700 font-medium">Leavesden, Watford • ~09:30/10:00 – 16:00/17:00 (4–6 hours recommended)</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="price-badge px-3.5 py-1.5 text-base font-bold">From £58.50 adult</div>
+                                <div class="text-xs text-slate-500 mt-0.5">Child lower • Dynamic pricing</div>
+                            </div>
+                        </div>
+                        
+                        <p class="text-slate-600 mt-3">Step onto iconic sets including the Great Hall, Diagon Alley, Hogwarts Express, and explore props, costumes, creature effects, and behind-the-scenes magic. <strong>Special summer feature until 7 Sept 2026: “First Year at Hogwarts”</strong> — interactive activities, Diagon Alley shopping passport, and more!</p>
+                        
+                        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                            <div class="bg-amber-50 rounded-2xl p-3">
+                                <div class="font-semibold text-amber-900">Transport from London (Recommended)</div>
+                                <div class="text-xs mt-1">Euston → Watford Junction train (20 mins) + free or low-cost studio shuttle. Total ~£12–20 return pp. Much cheaper than Uber/taxi (£70+ each way).</div>
+                            </div>
+                            <div class="bg-amber-50 rounded-2xl p-3">
+                                <div class="font-semibold text-amber-900">On-site Experience</div>
+                                <div class="text-xs mt-1">Themed dining at The Hogwarts Table (pre-bookable packages with Butterbeer souvenir tankard + guidebook). Backlot café + dedicated picnic area.</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="lg:w-72 shrink-0 space-y-3">
+                        <a href="https://www.wbstudiotour.co.uk/" target="_blank" class="block w-full text-center bg-gradient-to-r from-amber-600 to-yellow-600 hover:from-amber-700 hover:to-yellow-700 transition text-white font-bold py-3.5 rounded-2xl">Book Official Tickets Now →</a>
+                        <div class="text-center text-xs text-amber-700">Book ASAP — July slots go very fast. Choose morning slot for best light &amp; energy.</div>
+                        
+                        <div class="text-xs bg-white border border-amber-200 rounded-2xl p-3">
+                            <strong>Alternative if sold out:</strong> London-based Harry Potter walking tours or the Warner Bros. shop in central London (much less magical than the full studio experience).
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dining & Practical -->
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white border border-slate-200 rounded-3xl p-6">
+                    <div class="font-semibold mb-3">🍽️ Lunch &amp; Refreshments</div>
+                    <div class="text-sm space-y-3">
+                        <div><span class="font-medium">The Hogwarts Table</span> — Themed packages (book with ticket if available). Includes Butterbeer in souvenir tankard.</div>
+                        <div><span class="font-medium">Backlot Café</span> — Standard hot meals, snacks, Butterbeer.</div>
+                        <div class="pt-2 border-t"><span class="font-medium text-emerald-700">💰 Best value:</span> Bring your own picnic/snacks and use the dedicated picnic area. Saves £15–25+ pp easily.</div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-slate-200 rounded-3xl p-6">
+                    <div class="font-semibold mb-3">Evening Return &amp; Dinner</div>
+                    <div class="text-sm">Return to London ~17:30–19:00. Dinner options near Euston/King’s Cross or Covent Garden:</div>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>• <span class="font-medium">Dishoom King’s Cross</span> — Bombay comfort food, very popular (book!)</li>
+                        <li>• <span class="font-medium">Rules or Hawksmoor</span> — Classic London heritage dining</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="money-tip p-5 rounded-3xl">
+                <div class="font-semibold text-amber-900 mb-2 flex items-center gap-2"><i class="fa-solid fa-magic"></i> Harry Potter Studio Money-Saving Tips</div>
+                <ul class="text-amber-800 text-sm space-y-1 pl-1">
+                    <li>• <strong>Book tickets the moment they become available</strong> for your preferred date/time. Peak July sells out weeks/months ahead.</li>
+                    <li>• Public transport (train + shuttle) is dramatically cheaper than private transfers or taxis.</li>
+                    <li>• Picnic lunch or substantial breakfast in London before departing. On-site food is themed but premium-priced.</li>
+                    <li>• Set a strict souvenir budget before arriving — it’s very tempting!</li>
+                    <li>• Check for any family or multi-ticket deals on the official site.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ================= DAY 11 ================= -->
+        <div id="day11" class="day-panel hidden">
+            <div class="day-header bg-white border-l-4 border-red-600 rounded-3xl p-6 mb-6 premium-shadow">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-3xl">🌳</span>
+                            <div>
+                                <h2 class="text-2xl heading-serif">Saturday, 11 July • Serene Parks &amp; Departure</h2>
+                                <p class="text-slate-600">Final London green space + Heathrow departure (BA031 19:20)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="booking-badge bg-red-100 text-red-700">FLIGHT DAY</span>
+                </div>
+            </div>
+
+            <div class="itinerary-card bg-white border border-slate-200 rounded-3xl p-6 premium-shadow mb-6">
+                <h3 class="text-xl font-semibold">Hyde Park &amp; Kensington Gardens</h3>
+                <p class="text-sm text-red-700 mt-0.5">10:00 – 13:00 • Relaxed morning</p>
+                <p class="mt-3 text-slate-600">Serpentine Lake, Albert Memorial, Italian Gardens, and views of Kensington Palace. Perfect gentle finale before the long flight home. Optional: Visit Kensington Palace (ticketed) if interested in royal history/Diana exhibition.</p>
+                
+                <div class="mt-5">
+                    <div class="font-medium mb-2">Final Lunch / Afternoon Tea</div>
+                    <div class="restaurant-option p-4 border rounded-2xl text-sm">
+                        <span class="font-semibold">The Orangery at Kensington Palace</span><br>
+                        Elegant 18th-century glasshouse setting. Classic afternoon tea or light lunch with beautiful garden views. A fitting farewell.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Departure -->
+            <div class="itinerary-card border-t-4 border-red-500 bg-white rounded-3xl p-6 premium-shadow">
+                <div class="flex flex-col md:flex-row gap-6">
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-lg flex items-center gap-2"><i class="fa-solid fa-plane text-red-600"></i> Flight Departure — British Airways BA031</h3>
+                        <div class="mt-3 text-sm space-y-2">
+                            <div><strong>Target at LHR T5:</strong> 16:20 (3 hours before 19:20 departure)</div>
+                            <div><strong>From central London:</strong> Heathrow Express from Paddington (~21 mins) or Elizabeth line / Tube.</div>
+                            <div class="text-xs text-slate-500">Book Heathrow Express tickets in advance for best price.</div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="https://www.heathrowexpress.com/" target="_blank" class="inline-block bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-2xl text-sm font-semibold">Heathrow Express Tickets</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="money-tip mt-6 p-5 rounded-3xl">
+                <div class="font-semibold text-amber-900">Departure Day Savings</div>
+                <div class="text-sm text-amber-800">• Use contactless payment or Oyster card for all London transport.<br>• Heathrow Express is fastest but book ahead; Elizabeth line is cheaper and still quick.<br>• Light lunch at The Orangery or bring picnic to the park to keep costs down before the flight.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="max-w-screen-xl mx-auto px-6 py-8 text-center text-xs text-slate-500 border-t">
+        <p>Prices and opening times are approximate for 2026 and subject to change. Always verify on official websites before booking. This itinerary is a personal planning tool created for Charles (方貴瀚).</p>
+        <p class="mt-1">Safe travels • Enjoy the heritage, the magic, and the landscapes! ✨</p>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent', '#b45309');
+        }
+        
+        // Day switching with active tab highlighting
+        function switchDay(dayId) {
+            // Hide all panels
+            document.querySelectorAll('.day-panel').forEach(panel => {
+                panel.classList.add('hidden');
+                panel.classList.remove('block');
+            });
+            
+            // Show target
+            const target = document.getElementById(dayId);
+            if (target) {
+                target.classList.remove('hidden');
+                target.classList.add('block');
+            }
+            
+            // Update active tab styles
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active', 'bg-blue-800', 'text-white', 'border-blue-800');
+                tab.classList.add('bg-white', 'border-slate-200', 'text-slate-700');
+                
+                if (tab.id === 'tab-' + dayId) {
+                    tab.classList.add('active', 'bg-blue-800', 'text-white', 'border-blue-800');
+                    tab.classList.remove('bg-white', 'border-slate-200', 'text-slate-700');
+                }
+            });
+            
+            // Smooth scroll to top of content
+            window.scrollTo({ top: 180, behavior: 'smooth' });
+        }
+        
+        // Keyboard support for tabs
+        function addKeyboardSupport() {
+            const tabs = document.querySelectorAll('.nav-tab');
+            tabs.forEach((tab, index) => {
+                tab.setAttribute('tabindex', '0');
+                tab.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const dayId = tab.id.replace('tab-', '');
+                        switchDay(dayId);
+                    }
+                    
+                    // Arrow key navigation
+                    if (e.key === 'ArrowRight') {
+                        const next = tabs[(index + 1) % tabs.length];
+                        next.focus();
+                        const nextDay = next.id.replace('tab-', '');
+                        switchDay(nextDay);
+                    }
+                    if (e.key === 'ArrowLeft') {
+                        const prev = tabs[(index - 1 + tabs.length) % tabs.length];
+                        prev.focus();
+                        const prevDay = prev.id.replace('tab-', '');
+                        switchDay(prevDay);
+                    }
+                });
+            });
+        }
+        
+        // Initialize everything
+        function init() {
+            initializeTailwind();
+            addKeyboardSupport();
+            
+            // Set initial active tab styling properly
+            const initialTab = document.getElementById('tab-day4');
+            if (initialTab) {
+                initialTab.classList.add('active', 'bg-blue-800', 'text-white', 'border-blue-800');
+            }
+            
+            // Show day4 by default (already has active class in HTML)
+            const day4 = document.getElementById('day4');
+            if (day4) day4.classList.remove('hidden');
+            
+            // Optional: Add subtle animation to cards on load
+            setTimeout(() => {
+                document.querySelectorAll('.itinerary-card').forEach((card, i) => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(10px)';
+                    setTimeout(() => {
+                        card.style.transition = 'all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1)';
+                        card.style.transitionDelay = (i * 40) + 'ms';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 50);
+                });
+            }, 300);
+            
+            // Console hint for developer
+            console.log('%c[Itinerary] Redesigned premium HTML ready. All interactive tabs and content loaded.', 'color:#64748b');
+        }
+        
+        // Boot
+        window.onload = init;
+        
+        // Expose switchDay for debugging if needed
+        window.switchDay = switchDay;
+    </script>
+</body>
+</html>
